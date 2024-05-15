@@ -1,0 +1,293 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+/*Fin Reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Lexend:wght@100..900&family=Merienda:wght@300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Domine", serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(192, 251, 255), rgba(207, 7, 191, 0.712));
+}
+.body1{
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(192, 251, 255), rgba(207, 7, 191, 0.712));
+}
+h1{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Lexend", sans-serif;
+}
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 5px 10%;
+    border-bottom: 1px solid gray;
+}
+.header .logo img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .logo img:hover {
+    transform: scale(1.1);
+}
+.header .nav-links {
+    
+    list-style: none;
+}
+.header .nav-links li {
+    
+    display: inline-block;
+    padding: 10px 40px 10px;
+    background-color: beige;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.header .nav-links li:hover {
+    transform: scale(1.03);
+}
+.header .nav-links a {
+    font-family: "Lexend", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.header .nav-links a:hover {
+    color: rgb(128, 8, 197);
+}
+.header .boton button {
+    font-family: "Lexend", sans-serif;
+    color: blueviolet;
+    padding: 9px 25px;
+    background-color: beige;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+}
+.header .boton button:hover {
+    background-color: black;
+    color: rgb(128, 8, 197);
+    transform: scale(1.1);
+}
+.hamburgesa{
+    display: none;
+}
+.container1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 40px;
+}
+.container1 a {
+    margin: 0px 20px;
+    height: 400px;
+    margin-bottom: 80px;
+}
+.adopta {
+    margin-top: 10px;
+    text-align: center;
+}
+.container1 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.image-text {
+    font-family: "Merienda", cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7);
+    padding:0px 35px 1px 52px;
+    border-radius: 5px;
+    font-size: 19px;
+    color: rgb(128, 1, 202);
+    
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.image-link:nth-child(1) {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+
+.image-link:nth-child(2) {
+    animation: slideInFromRight 1s ease-out forwards;
+} 
+.p1 {
+    font-family: "Lexend", sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.ejemplo1{
+    display: flex;
+    padding: 80px 80px ;
+    border-bottom: 1px solid black;
+}
+.ejemplo1 img{
+    height: 500px;
+    width: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+.ejemplo1 p{
+    font-size: 25px;
+    padding-top: 80px;
+    padding-left: 30px;
+}
+footer{
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 15px
+}
+footer img{
+    height: 40px;   
+    margin-right: 30px;   
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 720px)  {
+    .header .nav-links li{
+    
+        padding: 1px;
+        margin: 1px;
+    }
+    .header .nav-links a{
+        font-size: 15pX;
+    }
+    .header .boton button {
+        font-size: 13px;
+    }
+    .header .boton{
+        margin: 2px;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 img{
+        height: 50%;
+    }
+    .container1 a{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+        background: linear-gradient(to bottom right, rgb(192, 251, 255), rgba(207, 7, 191, 0.712));
+    }
+    .image-text {
+        font-family: "Merienda", cursive;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.7);
+        padding:0px 35px 1px 52px;
+        border-radius: 5px;
+        font-size: 15px;
+        color: rgb(128, 1, 202);
+
+    }
+}
+@media only screen and (max-width: 390px){
+    .nav-links{
+        display: none;
+    }
+    .boton{
+        display: none ;
+    }
+    .hamburgesa{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburgesa img{
+        width: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .hamburgesa img:hover {
+        transform: scale(1.1);
+    }
+}
